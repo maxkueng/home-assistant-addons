@@ -1,0 +1,13 @@
+#!/usr/bin/with-contenv bashio
+# ==============================================================================
+# HTTP to MQTT
+# Starts http2mqtt
+# ==============================================================================
+bashio::log.info "Starting HTTP to MQTT..."
+
+export NODE_ENV=production
+
+cd /opt/ \
+    || bashio::exit.nok "Could not change directory to application"
+
+exec node build/server.js --config /data/options.json
