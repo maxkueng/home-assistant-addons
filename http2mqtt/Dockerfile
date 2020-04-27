@@ -12,7 +12,7 @@ RUN \
   nodejs=12.15.0-r1 \
   \
   && curl -J -L -o /tmp/http2mqtt.tar.gz \
-    "https://github.com/maxkueng/http2mqtt/archive/24e90ad314a049762c80b050a811c46c72021a5d.tar.gz" \
+    "https://github.com/maxkueng/http2mqtt/archive/86d03a2e5f3f368d83e239283c38d6069e1895a9.tar.gz" \
   && tar zxvf \
     /tmp/http2mqtt.tar.gz \
     --strip 1 -C /opt \
