@@ -1,4 +1,4 @@
-ARG BUILD_FROM=hassioaddons/base:7.0.2
+ARG BUILD_FROM=ghcr.io/hassio-addons/base/amd64:9.1.3
 
 FROM ${BUILD_FROM}
 
@@ -6,10 +6,10 @@ SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 
 RUN \
   apk add --no-cache --virtual .build-dependencies \
-    npm=12.15.0-r1 \
+    npm=14.16.0-r0 \
   \
   && apk add --no-cache \
-  nodejs=12.15.0-r1 \
+  nodejs=14.16.0-r0 \
   \
   && curl -J -L -o /tmp/http2mqtt.tar.gz \
     "https://github.com/maxkueng/http2mqtt/archive/2bfe5a4f81eeefcd31d24c9dfc23070f8e68397a.tar.gz" \

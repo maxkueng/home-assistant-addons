@@ -6,6 +6,7 @@
   "url": "https://github.com/maxkueng/hassio-http2mqtt",
   "startup": "application",
   "arch": ["aarch64", "amd64", "armhf", "armv7", "i386"],
+  "services": ["mqtt:want"],
   "ports": {
     "8321/tcp": 8321
   },
