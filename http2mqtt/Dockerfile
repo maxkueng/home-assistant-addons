@@ -6,10 +6,10 @@ SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 
 RUN \
   apk add --no-cache --virtual .build-dependencies \
-    npm=14.16.0-r0 \
+    npm \
   \
   && apk add --no-cache \
-  nodejs=14.16.0-r0 \
+  nodejs \
   \
   && curl -J -L -o /tmp/http2mqtt.tar.gz \
     "https://github.com/maxkueng/http2mqtt/archive/2bfe5a4f81eeefcd31d24c9dfc23070f8e68397a.tar.gz" \
