@@ -10,4 +10,4 @@ export NODE_ENV=production
 cd /opt/ \
     || bashio::exit.nok "Could not change directory to application"
 
-exec node build/server.js --config /data/options.json
+exec node build/server.js --config /config/http2mqtt.json
